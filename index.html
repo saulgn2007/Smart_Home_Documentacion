@@ -18,15 +18,13 @@
         <span>Nex<em>Home</em></span>
       </a>
       <nav class="nav-lateral">
-        <a href="#" class="activo">🏠 Inicio</a>
-        <a href="#">💡 Iluminación</a>
-        <a href="#">🌡️ Clima</a>
-        <a href="#">⚡ Energía</a>
-        <a href="#">📷 Cámaras</a>
-        <a href="#">🛡️ Seguridad</a>
-        <a href="#">🔔 Alertas</a>
-        <a href="#">📱 Dispositivos</a>
-        <a href="#">⚙️ Ajustes</a>
+        <a href="#inicio" class="activo">🏠 Inicio</a>
+        <a href="#energia">💡 Iluminación</a>
+        <a href="#temperatura">🌡️ Clima</a>
+        <a href="#luz">⚡ Energía</a>
+        <a href="#camaras">📷 Cámaras</a>
+        <a href="#seguridad">🛡️ Seguridad</a>
+        <a href="#tiempo">🌤️ Tiempo</a>
       </nav>
       <div class="lateral-pie">
         <div class="avatar">👤</div>
@@ -38,16 +36,16 @@
     </div>
 
     <!-- CABECERA -->
-    <header class="cabecera">
+    <header class="cabecera" id="inicio">
       <a href="#" class="logo">
         <div class="logo-icono"><img src="resources/logo.png" alt="Next Home"></div>
         <span>Nex<em>Home</em></span>
       </a>
       <nav class="nav-central">
-        <a href="#" class="activo">Inicio</a>
-        <a href="#">Energía</a>
-        <a href="#">Cámaras</a>
-        <a href="#">Ajustes</a>
+        <a href="#inicio" class="activo">Inicio</a>
+        <a href="#energia">Energía</a>
+        <a href="#camaras">Cámaras</a>
+        <a href="#tiempo">Tiempo</a>
       </nav>
       <div class="cabecera-derecha">
         <div class="estado-online">EN LÍNEA</div>
@@ -83,7 +81,7 @@
         <div class="rejilla-tarjetas">
 
           <!-- TEMPERATURA -->
-          <div class="tarjeta">
+          <div class="tarjeta" #id="temperatura">
             <div class="tarjeta-cabecera">
               <div class="tarjeta-icono icono-temp">🌡️</div>
               <div class="tarjeta-info">
@@ -99,7 +97,7 @@
           </div>
 
           <!-- LUCES -->
-          <div class="tarjeta">
+          <div class="tarjeta" id="energia">
             <div class="tarjeta-cabecera">
               <div class="tarjeta-icono icono-luz">💡</div>
               <div class="tarjeta-info">
@@ -130,7 +128,7 @@
           </div>
 
           <!-- ENERGÍA -->
-          <div class="tarjeta tarjeta-ancha">
+          <div class="tarjeta tarjeta-ancha" id="luz">
             <div class="tarjeta-cabecera">
               <div class="tarjeta-icono icono-energia">⚡</div>
               <div class="tarjeta-info">
@@ -158,7 +156,7 @@
           </div>
 
           <!-- CÁMARAS -->
-          <div class="tarjeta tarjeta-ancha">
+          <div class="tarjeta tarjeta-ancha" id="camaras">
             <div class="tarjeta-cabecera">
               <div class="tarjeta-icono icono-camara">📷</div>
               <div class="tarjeta-info">
@@ -169,22 +167,22 @@
             </div>
             <div class="rejilla-camaras">
               <div class="camara">
-                <img src="ENLACE_IMAGEN_1" alt="Entrada principal" class="camara-imagen" />
+                <img src="resources/entrada.jpg" alt="Entrada principal" class="camara-imagen" />
                 <div class="camara-nombre">Entrada principal</div>
                 <div class="camara-vivo">LIVE</div>
               </div>
               <div class="camara">
-                <img src="ENLACE_IMAGEN_2" alt="Jardín" class="camara-imagen" />
-                <div class="camara-nombre">Jardín</div>
+                <img src="resources/cocina.jpg" alt="Cocina" class="camara-imagen" />
+                <div class="camara-nombre">Cocina</div>
                 <div class="camara-vivo">LIVE</div>
               </div>
               <div class="camara">
-                <img src="ENLACE_IMAGEN_3" alt="Garaje" class="camara-imagen" />
+                <img src="resources/garaje.jpg" alt="Garaje" class="camara-imagen" />
                 <div class="camara-nombre">Garaje</div>
                 <div class="camara-vivo">LIVE</div>
               </div>
               <div class="camara">
-                <img src="ENLACE_IMAGEN_4" alt="Fachada" class="camara-imagen" />
+                <img src="resources/fachada.jpg" alt="Fachada" class="camara-imagen" />
                 <div class="camara-nombre">Fachada</div>
                 <div class="camara-vivo">LIVE</div>
               </div>
@@ -192,7 +190,7 @@
           </div>
 
           <!-- SEGURIDAD -->
-          <div class="tarjeta">
+          <div class="tarjeta" id="seguridad">
             <div class="tarjeta-cabecera">
               <div class="tarjeta-icono icono-seguridad">🛡️</div>
               <div class="tarjeta-info">
@@ -209,7 +207,7 @@
           </div>
 
           <!-- CLIMA -->
-          <div class="tarjeta">
+          <div class="tarjeta" id="tiempo">
             <div class="tarjeta-cabecera">
               <div class="tarjeta-icono icono-clima">🌤️</div>
               <div class="tarjeta-info">
@@ -244,10 +242,10 @@
 
     <!-- NAV INFERIOR — solo móvil -->
     <nav class="nav-inferior">
-      <a href="#" class="nav-item activo"><span>🏠</span><span>Inicio</span></a>
-      <a href="#" class="nav-item"><span>💡</span><span>Luces</span></a>
-      <a href="#" class="nav-item"><span>⚡</span><span>Energía</span></a>
-      <a href="#" class="nav-item"><span>📷</span><span>Cámaras</span></a>
+      <a href="#inicio" class="nav-item activo"><span>🏠</span><span>Inicio</span></a>
+      <a href="#energia" class="nav-item"><span>💡</span><span>Luces</span></a>
+      <a href="#luz" class="nav-item"><span>⚡</span><span>Energía</span></a>
+      <a href="#camaras" class="nav-item"><span>📷</span><span>Cámaras</span></a>
     </nav>
 
   </div>
