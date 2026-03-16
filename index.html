@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexHome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <input type="checkbox" id="cambiar-tema" />
+  <div class="contenedor">
+
+    <!-- BARRA LATERAL -->
+    <div class="barra-lateral">
+      <a href="resources/logo.png" class="logo" style="padding:1.25rem 1rem 1.5rem; border-bottom:1px solid var(--borde);">
+        <div class="logo-icono"><img src="resources/logo.png" alt="Next Home"></img></div>
+        <span>Nex<em>Home</em></span>
+      </a>
+      <nav class="nav-lateral">
+        <a href="#" class="activo">🏠 Inicio</a>
+        <a href="#">💡 Iluminación</a>
+        <a href="#">🌡️ Clima</a>
+        <a href="#">⚡ Energía</a>
+        <a href="#">📷 Cámaras</a>
+        <a href="#">🛡️ Seguridad</a>
+        <a href="#">🔔 Alertas</a>
+        <a href="#">📱 Dispositivos</a>
+        <a href="#">⚙️ Ajustes</a>
+      </nav>
+      <div class="lateral-pie">
+        <div class="avatar">👤</div>
+        <div>
+          <div class="usuario-nombre">Saúl G.</div>
+          <div class="usuario-email">saulgonna@gmail.com</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CABECERA -->
+    <header class="cabecera">
+      <a href="#" class="logo">
+        <div class="logo-icono"><img src="resources/logo.png" alt="Next Home"></div>
+        <span>Nex<em>Home</em></span>
+      </a>
+      <nav class="nav-central">
+        <a href="#" class="activo">Inicio</a>
+        <a href="#">Energía</a>
+        <a href="#">Cámaras</a>
+        <a href="#">Ajustes</a>
+      </nav>
+      <div class="cabecera-derecha">
+        <div class="estado-online">EN LÍNEA</div>
+        <label for="cambiar-tema" class="boton-tema"></label>
+      </div>
+    </header>
+
+    <!-- PRINCIPAL -->
+    <main class="principal">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-interior">
+          <div>
+            <h1 class="hero-titulo">Tu hogar,<br/><span class="resaltado">inteligente</span></h1>
+            <p class="hero-descripcion">Panel de control unificado. Monitoriza y controla cada rincón desde un único lugar.</p>
+          </div>
+          <div class="hero-numeros">
+            <div><div class="numero-valor">24</div><div class="numero-label">Dispositivos</div></div>
+            <div><div class="numero-valor">7</div><div class="numero-label">Habitaciones</div></div>
+            <div><div class="numero-valor">18%</div><div class="numero-label">Ahorro</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WIDGETS -->
+      <section>
+        <div class="seccion-cabecera">
+          <h2 class="seccion-titulo">Mis widgets</h2>
+          <span class="seccion-contador">6 activos</span>
+        </div>
+
+        <div class="rejilla-tarjetas">
+
+          <!-- TEMPERATURA -->
+          <div class="tarjeta">
+            <div class="tarjeta-cabecera">
+              <div class="tarjeta-icono icono-temp">🌡️</div>
+              <div class="tarjeta-info">
+                <div class="tarjeta-titulo">Temperatura</div>
+                <div class="tarjeta-ubicacion">Salón principal</div>
+              </div>
+              <span class="etiqueta etiqueta-verde">ACTIVO</span>
+            </div>
+            <div><span class="valor-grande valor-temp">22.4</span><span class="unidad">°C</span></div>
+            <div class="subtexto">Humedad: 48% · Siente como 21 °C</div>
+            <div class="barra-temp"><div class="barra-temp-relleno"></div></div>
+            <div class="rango-temp"><span>16°</span><span>CONFORT</span><span>30°</span></div>
+          </div>
+
+          <!-- LUCES -->
+          <div class="tarjeta">
+            <div class="tarjeta-cabecera">
+              <div class="tarjeta-icono icono-luz">💡</div>
+              <div class="tarjeta-info">
+                <div class="tarjeta-titulo">Iluminación</div>
+                <div class="tarjeta-ubicacion">Toda la casa</div>
+              </div>
+              <span class="etiqueta etiqueta-verde">5/6 ON</span>
+            </div>
+            <div class="rejilla-luces">
+              <input type="checkbox" id="luz-salon" class="checkbox-luz" checked />
+              <label for="luz-salon" class="etiqueta-luz"><span class="luz-emoji">💡</span><span class="luz-nombre">Salón</span><span class="interruptor"></span></label>
+
+              <input type="checkbox" id="luz-cocina" class="checkbox-luz" checked />
+              <label for="luz-cocina" class="etiqueta-luz"><span class="luz-emoji">💡</span><span class="luz-nombre">Cocina</span><span class="interruptor"></span></label>
+
+              <input type="checkbox" id="luz-dormitorio" class="checkbox-luz" />
+              <label for="luz-dormitorio" class="etiqueta-luz"><span class="luz-emoji">💡</span><span class="luz-nombre">Dormit.</span><span class="interruptor"></span></label>
+
+              <input type="checkbox" id="luz-bano" class="checkbox-luz" checked />
+              <label for="luz-bano" class="etiqueta-luz"><span class="luz-emoji">💡</span><span class="luz-nombre">Baño</span><span class="interruptor"></span></label>
+
+              <input type="checkbox" id="luz-garaje" class="checkbox-luz" checked />
+              <label for="luz-garaje" class="etiqueta-luz"><span class="luz-emoji">💡</span><span class="luz-nombre">Garaje</span><span class="interruptor"></span></label>
+
+              <input type="checkbox" id="luz-terraza" class="checkbox-luz" checked />
+              <label for="luz-terraza" class="etiqueta-luz"><span class="luz-emoji">💡</span><span class="luz-nombre">Terraza</span><span class="interruptor"></span></label>
+            </div>
+          </div>
+
+          <!-- ENERGÍA -->
+          <div class="tarjeta tarjeta-ancha">
+            <div class="tarjeta-cabecera">
+              <div class="tarjeta-icono icono-energia">⚡</div>
+              <div class="tarjeta-info">
+                <div class="tarjeta-titulo">Consumo energético</div>
+                <div class="tarjeta-ubicacion">Últimos 7 días · kWh</div>
+              </div>
+              <span class="etiqueta etiqueta-verde">↓ 18%</span>
+            </div>
+            <div><span class="valor-grande valor-energia">3.2</span><span class="unidad">kWh hoy</span></div>
+            <div class="barras-energia">
+              <div class="columna-barra"><div class="barra barra-baja" style="height:67%"></div><div class="dia-semana">L</div></div>
+              <div class="columna-barra"><div class="barra barra-baja" style="height:60%"></div><div class="dia-semana">M</div></div>
+              <div class="columna-barra"><div class="barra barra-baja" style="height:85%"></div><div class="dia-semana">X</div></div>
+              <div class="columna-barra"><div class="barra barra-baja" style="height:64%"></div><div class="dia-semana">J</div></div>
+              <div class="columna-barra"><div class="barra barra-baja" style="height:74%"></div><div class="dia-semana">V</div></div>
+              <div class="columna-barra"><div class="barra barra-baja" style="height:100%"></div><div class="dia-semana">S</div></div>
+              <div class="columna-barra"><div class="barra" style="height:52%"></div><div class="dia-semana">D</div></div>
+            </div>
+            <div class="pie-energia">
+              <div><div class="metrica-valor">€ 0.47</div><div class="metrica-label">Coste hoy</div></div>
+              <div><div class="metrica-valor">21.4 kWh</div><div class="metrica-label">Esta semana</div></div>
+              <div><div class="metrica-valor">€ 3.14</div><div class="metrica-label">Coste semana</div></div>
+              <div><div class="metrica-valor">↓ 18%</div><div class="metrica-label">vs mes anterior</div></div>
+            </div>
+          </div>
+
+          <!-- CÁMARAS -->
+          <div class="tarjeta tarjeta-ancha">
+            <div class="tarjeta-cabecera">
+              <div class="tarjeta-icono icono-camara">📷</div>
+              <div class="tarjeta-info">
+                <div class="tarjeta-titulo">Cámaras de seguridad</div>
+                <div class="tarjeta-ubicacion">4 cámaras activas</div>
+              </div>
+              <span class="etiqueta etiqueta-verde">EN VIVO</span>
+            </div>
+            <div class="rejilla-camaras">
+              <div class="camara">
+                <img src="ENLACE_IMAGEN_1" alt="Entrada principal" class="camara-imagen" />
+                <div class="camara-nombre">Entrada principal</div>
+                <div class="camara-vivo">LIVE</div>
+              </div>
+              <div class="camara">
+                <img src="ENLACE_IMAGEN_2" alt="Jardín" class="camara-imagen" />
+                <div class="camara-nombre">Jardín</div>
+                <div class="camara-vivo">LIVE</div>
+              </div>
+              <div class="camara">
+                <img src="ENLACE_IMAGEN_3" alt="Garaje" class="camara-imagen" />
+                <div class="camara-nombre">Garaje</div>
+                <div class="camara-vivo">LIVE</div>
+              </div>
+              <div class="camara">
+                <img src="ENLACE_IMAGEN_4" alt="Fachada" class="camara-imagen" />
+                <div class="camara-nombre">Fachada</div>
+                <div class="camara-vivo">LIVE</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEGURIDAD -->
+          <div class="tarjeta">
+            <div class="tarjeta-cabecera">
+              <div class="tarjeta-icono icono-seguridad">🛡️</div>
+              <div class="tarjeta-info">
+                <div class="tarjeta-titulo">Seguridad</div>
+                <div class="tarjeta-ubicacion">Sistema de alarma</div>
+              </div>
+              <span class="etiqueta etiqueta-verde">ARMADO</span>
+            </div>
+            <div class="escudo">
+              <div class="escudo-emoji">🛡️</div>
+              <div class="escudo-estado">Hogar protegido</div>
+              <div class="escudo-detalle">Todos los sensores en línea<br/>Última revisión: hace 2 min</div>
+            </div>
+          </div>
+
+          <!-- CLIMA -->
+          <div class="tarjeta">
+            <div class="tarjeta-cabecera">
+              <div class="tarjeta-icono icono-clima">🌤️</div>
+              <div class="tarjeta-info">
+                <div class="tarjeta-titulo">Clima exterior</div>
+                <div class="tarjeta-ubicacion">Sevilla, ES</div>
+              </div>
+              <span class="etiqueta etiqueta-gris">EXT.</span>
+            </div>
+            <div><span class="valor-grande valor-clima">19</span><span class="unidad">°C</span></div>
+            <div class="subtexto">Parcialmente nublado · Viento 12 km/h</div>
+            <div class="rejilla-clima">
+              <div><div class="clima-label">Humedad</div><div class="clima-valor">62%</div></div>
+              <div><div class="clima-label">Presión</div><div class="clima-valor">1013 hPa</div></div>
+              <div><div class="clima-label">Índice UV</div><div class="clima-valor">3 (Mod.)</div></div>
+              <div><div class="clima-label">Puesta de sol</div><div class="clima-valor">19:42</div></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE -->
+    <footer >
+      <nav class="pie-enlaces">
+        <a href="#">Privacidad</a>
+        <a href="#">Ayuda</a>
+        <a href="#">API</a>
+        <a href="#">Estado del sistema</a>
+      </nav>
+    </footer>
+
+    <!-- NAV INFERIOR — solo móvil -->
+    <nav class="nav-inferior">
+      <a href="#" class="nav-item activo"><span>🏠</span><span>Inicio</span></a>
+      <a href="#" class="nav-item"><span>💡</span><span>Luces</span></a>
+      <a href="#" class="nav-item"><span>⚡</span><span>Energía</span></a>
+      <a href="#" class="nav-item"><span>📷</span><span>Cámaras</span></a>
+    </nav>
+
+  </div>
+</body>
+</html>
